@@ -8,5 +8,6 @@ export function Todos({todos}) {
                 <button>{todo.completed == true ? "Completed" : "Mark as Complete"}</button>
             </div>
         })}
+        
     </div>
 }

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('your db URL')
+mongoose.connect('Your mongodb url here')
 
 const todoSchema = mongoose.Schema({
     title : String,
