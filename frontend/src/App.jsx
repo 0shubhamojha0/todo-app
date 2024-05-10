@@ -5,6 +5,8 @@ import './App.css'
 import { TodoCreate } from './components/TodoCreate'
 import { Todos } from './components/Todos'
 import { useEffect } from 'react'
+import { Background } from './components/Background'
+import { Foreground } from './components/Foreground'
 
 function App() {
   const [todos, setTodos] = useState([])
@@ -20,10 +22,11 @@ function App() {
   },[])
 
   return (
-    <div>
-      <TodoCreate></TodoCreate>
-      <Todos todos={todos}></Todos>
-     
+    <div className="relative w-full h-screen bg-zinc-800">
+      {/* <TodoCreate></TodoCreate>
+      <Todos todos={todos}></Todos> */}
+     <Background/>
+     <Foreground todos={todos}></Foreground>
     </div>
   )
 }
